@@ -1,0 +1,140 @@
+/*
+    Author:Mahmudul Hasan Shafin
+    github:@asmcmt
+*/
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #F3F3F3;
+}
+.clock-container{
+    width: 70%;
+    height: 80vh;
+    background-color:#48CFAE ;
+    margin: auto;
+    margin-top: 10vh;
+    position: relative;
+    box-shadow:  5px 10px #888888;
+}
+.clock-body{
+    width: 60%;
+    height: 30vh;
+    background-color: #F3F3F3;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    border-radius:50px ;
+    border: 15px solid white;
+    z-index: 1;
+}
+.clock-top{
+    width: 30%;
+    height: 3vh;
+    background-color:#CAD4D5 ;
+    position: absolute;
+    top:27%;
+    left: 38%;
+    border-radius: 10px 10px 0 0;
+}
+.clock-bottom{
+    width:40%;
+    height: 3vh;
+    position: absolute;
+    top:73%;
+    left:35%;
+    box-sizing: border-box;
+}
+.circle-first,.circle-second{
+    width: 15%;
+    height: 2vh;
+    background-color: #CAD4D5;
+    display: inline-block;
+    border-radius: 0 0 8px 8px;
+}
+.circle-second{
+    margin-left: 15vw;
+}
+.time-holder{
+    width: 55%;
+    height: 23vh;
+    background-color:#434A54 ;
+    position: absolute;
+    top:9%;
+    left:23%;
+    border-radius: 3px;
+    border: 5px solid #D1CFD2;
+    position: relative;
+    color: white;
+}
+.time-holder span{
+    color:white
+}
+.day-month-year{
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    font-size: 1.5rem;
+}
+.time{
+    position: absolute;
+    top: 45%;
+    left:15%;
+    font-size: 2rem;
+    text-align: center;
+}
+.time:last-child{
+    font-family: 'Segment7Standard';
+}
+.time span:last-child{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    background-color: coral;
+    padding: 5px;
+}
+#circleon{
+    width: 4%;
+    height: 3vh;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top:25%;
+    left: 15%;
+}
+#circleoff{
+    width: 4%;
+    height: 3vh;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    top:40%;
+    left: 15%;
+}
+#circleon,#circleoff{
+    left:18% ;
+}
+@media screen and (max-width:768px) {
+    .time{
+        position: absolute;
+        top: 45%;
+        left:0;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .day-month-year{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .time span:last-child{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:15px;
+        background-color: coral;
+        padding: 4px;
+    }
+    #circleon,#circleoff{
+        width: 6%;
+        left:10%;
+    }
+}

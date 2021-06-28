@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/segment7" type="text/css"/>
+    <title>Digital Clock Design</title>
+</head>
+<body onload="initClock()">
+    <div class="clock-container">
+        <div class="clock-top">
+
+        </div>
+        <div class="clock-body">
+            <div id="circleon"></div>
+            <div id="circleoff"></div>
+            <div class="time-holder">
+                <div class="day-month-year">
+                    <span id="dayname">Day </span>,
+                    <span id="month">Month </span>,
+                    <span id="daynum">00 </span>,
+                    <span id="year">Year</span>
+                </div>
+                <div class="time">
+                    <span id="hour">00</span>:
+                    <span id="minutes">00</span>:
+                    <span id="seconds">00</span>
+                    <span id="period">AM</span>
+                </div>
+            </div>
+        </div>
+        <div class="clock-bottom">
+            <div class="circle-first"></div>
+            <div class="circle-second"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
